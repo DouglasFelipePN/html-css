@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mídias em HTML5</title>
+    <style>
+        .music{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>imagem dinâmica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagen flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>vamos aprender a reproduzir áudio em HTML5</p>
+    <audio src="midia/rap-minato-e-naruto.mp3" controls autoplay></audio>
+    <!--formatos de audio, MP3-WAV-OGG-->
+    <audio preload="auto" controls class="music">
+        <source src="midia/rap-ayanokoji.mp3" type="audio/mpeg">
+        <source src="midia/rap-ayanokoji.ogg" type="audio/ogg">
+        <source src="midia/rap-ayanokoji.wav" type="audio/wav">
+        <p>infelizmente o seu navegador não consegue reproduzir o áudio.
+
+        <a href="midia/rap-ayanokoji.mp3">clique aqui para baixar o arquivo.</a> 
+</body>
+</html>
