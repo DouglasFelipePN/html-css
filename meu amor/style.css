@@ -40,6 +40,12 @@ h2:hover{
 p{
     text-align: justify;
 }
+footer > p{
+    display: none;
+}
+footer:hover > p{
+    display: block;
+}
 button{
     background-color: rgb(236, 90, 188);
     border: 1px solid black;
