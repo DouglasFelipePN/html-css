@@ -11,6 +11,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
@@ -20,10 +21,27 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgrey;
+            border: 1px solid black;
         }
-        th{
-            background-color: darkgray;
+        tbody > tr:nth-child(odd)/*2n-1*/{
+            background-color: rgb(250, 67, 67);
+        }
+        tbody > tr:nth-child(even) /*2n*/{
+            background-color: rgb(0, 0, 0);
             color: white;
+            
+        }
+        thead, tfoot{
+            background-color: rgb(2, 59, 145);
+            color: white;
+        }
+        thead> tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 145);
+        }
+        p{
+            width: 400px;
         }
     </style>
 </head>
@@ -45,7 +63,7 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">População</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -159,8 +177,10 @@
                 <td class="num">605.761</td>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td>210.147.126</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vitae sed. Quos, doloremque, autem assumenda iusto magni ipsam, nulla vero tempore rerum illum distinctio? Ducimus earum similique voluptatibus eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et facilis quidem fuga magnam doloribus cupiditate dolores, quos nesciunt illum dolorum, veritatis corporis dicta hic voluptate facere. Velit, similique Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate possimus, corrupti aliquam quod tempore dolores dolorem neque maiores illum dolore facere ad ea sit sint deserunt ipsa porro suscipit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vitae sed. Quos, doloremque, autem assumenda iusto magni ipsam, nulla vero tempore rerum illum distinctio? Ducimus earum similique voluptatibus eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et facilis quidem fuga magnam doloribus cupiditate dolores, quos nesciunt illum dolorum, veritatis corporis dicta hic voluptate facere. Velit, similique Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate possimus, corrupti aliquam quod tempore dolores dolorem neque maiores illum dolore facere ad ea sit sint deserunt ipsa porro suscipit?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, vitae sed. Quos, doloremque, autem assumenda iusto magni ipsam, nulla vero tempore rerum illum distinctio? Ducimus earum similique voluptatibus eveniet Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et facilis quidem fuga magnam doloribus cupiditate dolores, quos nesciunt illum dolorum, veritatis corporis dicta hic voluptate facere. Velit, similique Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est cupiditate possimus, corrupti aliquam quod tempore dolores dolorem neque maiores illum dolore facere ad ea sit sint deserunt ipsa porro suscipit?</p>
 </body>

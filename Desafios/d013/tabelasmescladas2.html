@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclando Tabelas</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 400px;
+        }
+        td{
+            border:1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" style="background-color: rgb(235, 74, 74);">A</td>
+            <td rowspan="4" style="background-color: rgb(213, 221, 94);">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" style="background-color: rgb(127, 236, 176);">C</td>
+            <td style="background-color: rgb(61, 173, 46);">D</td>
+            <td style="background-color: rgb(52, 214, 160);">E</td>
+            <td style="background-color: rgb(0, 255, 191);">F</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(61, 173, 46);">G</td>
+            <td style="background-color: rgb(52, 214, 160);">H</td>
+            <td style="background-color: rgb(0, 255, 191);">I</td>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(61, 173, 46);">J</td>
+            <td style="background-color: rgb(52, 214, 160);">K</td>
+            <td style="background-color: rgb(0, 255, 191);">L</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="background-color: rgb(136, 136, 255);">M</td>
+        </tr>
+    </table>
+</body>
+</html>
