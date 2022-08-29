@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(184, 210, 245), rgb(255, 255, 71));
+}
+header h1{
+    padding: 10px;
+    text-align: center;
+    
+}
+menu{
+    padding: 10px;
+    margin-left: 20px;
+}
+menu a{
+    padding: 5px 5px 0px 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(4, 80, 42);
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+menu a#inicio:hover{
+    margin-left: 15px;
+    background-color: rgb(48, 165, 97);
+    border: 0.3px solid rgba(10, 105, 105, 0.63);
+}
+menu a#lua:hover{
+    padding: 5px 15px 0px 15px;
+    background-color: rgb(78, 210, 233);
+    border: 0.3px solid rgba(10, 105, 105, 0.63);
+}
+menu a#sol:hover{
+    padding: 5px 15px 0px 15px;
+    background-color: rgb(216, 213, 7);
+    border: 0.3px solid rgba(10, 105, 105, 0.63);
+}
+menu a#historia:hover{
+    background-color: rgb(196, 93, 228);
+    border: 0.3px solid rgba(10, 105, 105, 0.63);
+}
+
+main{
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    background-color: rgb(110, 238, 210);
+    border-radius: 0px 0px 10px 10px;
+}
+main h2{
+    text-align: center;
+    padding: 10px;
+}
+main p{
+    text-indent: 20px;
+    font-size: 1em;
+    line-height: 1.3em;
+}
